@@ -1,0 +1,88 @@
+/*Tablet: 2 columns*/
+@media (max-width: 768px) {
+  /* Nav */
+  #primary-nav a {
+    margin-right: 20px; /* spacing for smaller screens */
+    font-size: 1em; /* -font size for smaller screens */
+  }
+
+  #primary-nav a:first-child {
+    font-size: 1em;
+    padding-left: 10px;
+  }
+
+  #hero h1 {
+    font-size: 4em;
+  }
+
+  /* Main */
+  #main {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #main h2 {
+    font-size: 3em;
+  }
+
+  #main p {
+    font-size: 1.5em;
+  }
+
+  /* Design */
+  #design .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #design h3 {
+    font-size: 1.5em;
+  }
+}
+
+/* Cellphone: 1 column */
+@media (max-width: 480px) {
+  #primary-nav a {
+    margin-right: 20px; /* spacing for smaller screens */
+    font-size: 0.5em; /* -font size for smaller screens */
+  }
+
+  #primary-nav a:first-child {
+    font-size: 0.8em;
+    padding-left: 10px;
+  }
+
+  #hero h1 {
+    font-size: 3em;
+  }
+
+  /* Main */
+  #main {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #main h2 {
+    font-size: 2em;
+  }
+
+  #main p {
+    font-size: 1.2em;
+  }
+
+  /* Design */
+  #design .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #design h3 {
+    font-size: 1.2em;
+  }
+
+  /* Footer */
+  #footer button {
+    margin-top: 1em;
+  }
+}
