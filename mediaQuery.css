@@ -1,88 +1,67 @@
-/*Tablet: 2 columns*/
-@media (max-width: 768px) {
-  /* Nav */
-  #primary-nav a {
-    margin-right: 20px; /* spacing for smaller screens */
-    font-size: 1em; /* -font size for smaller screens */
-  }
-
-  #primary-nav a:first-child {
-    font-size: 1em;
-    padding-left: 10px;
-  }
-
-  #hero h1 {
-    font-size: 4em;
-  }
-
-  /* Main */
-  #main {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  #main h2 {
-    font-size: 3em;
-  }
-
-  #main p {
-    font-size: 1.5em;
-  }
-
-  /* Design */
-  #design .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #design h3 {
-    font-size: 1.5em;
-  }
-}
-
-/* Cellphone: 1 column */
 @media (max-width: 480px) {
+  body {
+    font-size: 0.8rem; /* Further reduce font size for mobile */
+  }
+
+  p {
+    font-size: 12pt; /* Smaller paragraph text for mobile */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #primary-nav .container {
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
   #primary-nav a {
-    margin-right: 20px; /* spacing for smaller screens */
-    font-size: 0.5em; /* -font size for smaller screens */
+    margin: 5px 0; /* Space out links vertically */
+    font-size: 12px;
   }
 
-  #primary-nav a:first-child {
-    font-size: 0.8em;
-    padding-left: 10px;
+  #hero {
+    height: 300px; /* Further reduce hero height */
+    font-size: 24px; /* Adjust hero text size */
   }
 
-  #hero h1 {
-    font-size: 3em;
+  #main, #design {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
-  /* Main */
-  #main {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+  .bird-section {
+    grid-template-columns: 1fr; /* Stack all content */
+    gap: 15px;
   }
 
-  #main h2 {
-    font-size: 2em;
+  .bird-images {
+    grid-template-columns: 1fr; /* 1 column for images */
+    justify-items: center; /* Centra las imágenes dentro de su contenedor */
+    text-align: center;
   }
 
-  #main p {
-    font-size: 1.2em;
+  .bird-images img {
+    margin: 0 auto; /* Centra las imágenes completamente */
   }
 
-  /* Design */
-  #design .grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  #design h3 {
-    font-size: 1.2em;
+  #footer {
+    padding: 20px 0;
   }
 
-  /* Footer */
+  .footer-email-form h2 {
+    font-size: 20px;
+  }
+
+  #footer-email {
+    font-size: 12px;
+    height: 35px;
+  }
+
   #footer button {
-    margin-top: 1em;
+    font-size: 12px;
+    padding: 8px 16px;
   }
 }
