@@ -21,11 +21,11 @@ p {
   top: 0;
   width: 100%;
   z-index: 1000;
-  
+
   /* Styling */
   background-color: #90bba2;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #primary-nav .container {
@@ -43,7 +43,7 @@ p {
   font-size: 16px;
   text-decoration: none;
   font-weight: 600;
-  
+
   /* Spacing & Effects */
   margin-right: 40px;
   transition: color 0.3s ease;
@@ -68,13 +68,13 @@ p {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  
+
   /* Background */
   background-image: url("img/Hero/LakeHero-NoLetters.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+
   /* Spacing */
   text-align: center;
   padding-top: 90px;
@@ -90,10 +90,10 @@ p {
   color: white;
   font-size: 3.5rem;
   font-weight: normal;
-  font-family: "Beth Ellen", cursive; 
+  font-family: "Beth Ellen", cursive;
   margin: 0;
   margin-bottom: 1rem;
-  
+
   /* Effects */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transition: opacity 0.3s ease;
@@ -208,6 +208,21 @@ section {
   padding-bottom: 20px;
 }
 
+/* 3D Model Viewer */
+model-viewer {
+  width: 80%;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+model-viewer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 /* Footer */
 #footer {
   background-color: #90bba2;
@@ -243,15 +258,15 @@ section {
   padding: 0 25px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  
+
   /* Effects */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 #footer-email:focus {
   outline: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #footer button {
@@ -264,7 +279,7 @@ section {
   font-size: 16px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  
+
   /* Effects */
   cursor: pointer;
   transition: all 0.3s ease;
@@ -273,5 +288,5 @@ section {
 #footer button:hover {
   background-color: #156835;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
