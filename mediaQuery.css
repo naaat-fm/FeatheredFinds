@@ -1,4 +1,3 @@
-
 @media (max-width: 480px) {
 
   #primary-nav a:not(:first-child) {
@@ -32,7 +31,19 @@
 
   #hero {
     height: 300px; /* Further reduce hero height */
-    font-size: 24px; /* Adjust hero text size */
+    margin-top: 90px; /* Agregamos margin-top para evitar el traslape con el nav */
+  }
+
+  #hero .container {
+    display: block; /* Cambiamos a block para mostrar el contenido */
+  }
+
+  #hero h1 {
+    font-size: 2rem; /* Tamaño más pequeño para móvil */
+  }
+
+  #hero .hero-subtitle {
+    display: none; /* Ocultamos el subtítulo */
   }
 
   #main, #design {
@@ -73,6 +84,66 @@
   #footer button {
     font-size: 12px;
     padding: 8px 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #hero {
+    height: 400px;
+    margin-top: 90px; /* Consistencia en el margin para tablets */
+  }
+
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero .hero-subtitle {
+    display: none;
+  }
+
+  .bird-section {
+    grid-template-columns: 2fr; /* Stack all content */
+    gap: 15px;
+  }
+
+  .bird-images {
+    grid-template-columns: 2fr; /* 1 column for images */
+    justify-items: center; /* Centra las imágenes dentro de su contenedor */
+    text-align: center;
+  }
+
+  .bird-images img {
+    margin: 0 auto; /* Centra las imágenes completamente */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #hero {
+    height: 500px;
+    margin-top: 90px; /* Consistencia en el margin para pantallas medianas */
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #hero .hero-subtitle {
+    display: none;
+  }
+
+  .bird-section {
+    grid-template-columns: 2fr; /* Stack all content */
+    gap: 15px;
+  }
+
+  .bird-images {
+    grid-template-columns: 2fr; /* 1 column for images */
+    justify-items: center; /* Centra las imágenes dentro de su contenedor */
+    text-align: center;
+  }
+
+  .bird-images img {
+    margin: 0 auto; /* Centra las imágenes completamente */
   }
 }
   
