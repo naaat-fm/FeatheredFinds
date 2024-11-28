@@ -1,4 +1,14 @@
+
 @media (max-width: 480px) {
+
+  #primary-nav a:not(:first-child) {
+    display: none;
+  }
+  
+  #primary-nav a:first-child {
+    margin: 0 auto;
+    font-size: 20px;
+  }
   body {
     font-size: 0.8rem; /* Further reduce font size for mobile */
   }
@@ -65,13 +75,5 @@
     padding: 8px 16px;
   }
 }
-@media screen and (max-width: 480px) {
-  #primary-nav a:not(:first-child) {
-    display: none;
-  }
   
-  #primary-nav a:first-child {
-    margin: 0 auto;
-    font-size: 20px;
-  }
-}
+
