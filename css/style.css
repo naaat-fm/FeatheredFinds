@@ -1,4 +1,6 @@
-/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
 body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -70,7 +72,7 @@ p {
   height: 100vh;
 
   /* Background */
-  background-image: url("img/Hero/LakeHero-NoLetters.png");
+  background-image: url("../img/Hero/LakeHero-NoLetters.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
