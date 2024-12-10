@@ -17,13 +17,6 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<<<<<<< HEAD
-    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet" />
-<!--FONTS-->    
-<!--3D model-->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<!--3D model-->
-=======
     <link
       href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap"
       rel="stylesheet"
@@ -35,7 +28,6 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
     <!--3D model-->
->>>>>>> d7ce65075ada9cee1e36b4d6f5ff40c337f9fe91
   </head>
 
   <body>
@@ -113,135 +105,261 @@
             <img src="img/Goldcrest-Camera 3.png" alt="Goldcrests/Bird" />
             <!--3D Model-->
             <model-viewer
-              src="./3Dassets/goldcrest2.glb"
-              alt="A 3D model of a Goldcrests"
+              src="3Dassets/goldcrest2.glb"
               ar
-              auto-rotate
+              ar-modes="webxr scene-viewer quick-look"
               camera-controls
+              tone-mapping="neutral"
+              poster="poster.webp"
+              shadow-intensity="1"
             >
+              <button
+                class="Hotspot"
+                slot="hotspot-1"
+                data-position="-0.0179703911541111m 0.2557373621664532m 0.26206352203252725m"
+                data-normal="0.1257702106424064m 0.8623623221019672m 0.49042132858784615m"
+                data-visibility-attribute="visible"
+              >
+                <div class="HotspotAnnotation">
+                  Yellow central crownstripe
+                </div></button
+              ><button
+                class="Hotspot"
+                slot="hotspot-2"
+                data-position="-0.21111409182898505m 0.118692524989616m 0.22822158093822764m"
+                data-normal="-0.1076346047175896m -0.012827840636155571m 0.9941077599394855m"
+                data-visibility-attribute="visible"
+              >
+                <div class="HotspotAnnotation">Legs are brown</div></button
+              ><button
+                class="Hotspot"
+                slot="hotspot-3"
+                data-position="-0.20620129491779193m 0.19893223573630614m 0.2019210202149175m"
+                data-normal="0.010452261874597968m 0.7267756929509149m -0.6867953424109852m"
+                data-visibility-attribute="visible"
+              >
+                <div class="HotspotAnnotation">
+                  Upper parts are pale olive-green
+                </div></button
+              ><button
+                class="Hotspot"
+                slot="hotspot-5"
+                data-position="0.02065144961928337m 0.2409724009842742m 0.2024758468195537m"
+                data-normal="0.8127427505278655m 0.5777220704716186m 0.07540842628238575m"
+                data-visibility-attribute="visible"
+              >
+                <div class="HotspotAnnotation">Two White wing bars</div>
+              </button>
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+                View in your space
+              </button>
             </model-viewer>
             <!--3D Model-->
           </div>
-          <model-viewer src="./3Dassets/goldcrests.glb"
-              alt="A 3D model of a Goldcrests"
-              ar
-              auto-rotate
-              camera-controls>
-          </model-viewer>
 
-        </div>
+          <!-- Lesser Grey Shrike -->
+          <div id="lesser-grey-shrike" class="bird-section">
+            <div class="bird-text">
+              <h3>Lesser Grey Shrike (Lanius minor)</h3>
+              <p>
+                The Lesser Grey Shrike is a striking bird with black, white, and
+                grey plumage, and males often display a subtle pinkish hue on
+                their chest during the breeding season.
+              </p>
+              <p>
+                Known for its sharp vision and hunting prowess, this bird
+                thrives in warm, open habitats like grasslands, scrublands, and
+                farmlands. Shrikes are perch hunters, often seen atop telephone
+                wires, fences, or tall shrubs, scanning the ground for insects,
+                small mammals, and even reptiles.
+              </p>
+              <p>
+                They're resourceful predators, sometimes storing their prey on
+                thorns or barbed wire for later consumption—a behavior that's
+                earned them the nickname "butcher birds." Lesser Grey Shrikes
+                migrate seasonally, breeding in Europe and Central Asia before
+                heading to Africa for the winter.
+              </p>
+              <p>
+                These birds are a vital part of the ecosystem, keeping insect
+                populations in check. Despite their resilience, they face
+                threats from habitat loss, making conservation efforts essential
+                to their survival.
+              </p>
+            </div>
+            <div class="bird-images">
+              <img
+                src="img/LesserGreyShrike-Camera.png"
+                alt="LesserGreyShrike/Bird"
+              />
+              <img
+                src="img/LesserGreyShrike-Camera 2.png"
+                alt="LesserGreyShrike/Bird"
+              />
+              <img
+                src="img/LesserGreyShrike-Camera 3.png"
+                alt="LesserGreyShrike/Bird"
+              />
+              <!--3D Model-->
+              <model-viewer
+                src="./3Dassets/lesserGrayshrike.glb"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-controls
+                tone-mapping="neutral"
+                poster="poster.webp"
+                shadow-intensity="1"
+              >
+                <button
+                  class="Hotspot"
+                  slot="hotspot-1"
+                  data-position="-1.253303672320022m 0.7298882628884664m 0.7989360645485202m"
+                  data-normal="0.6614069205498143m 0.7480907107692016m 0.05386254644595273m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">Black forehead</div></button
+                ><button
+                  class="Hotspot"
+                  slot="hotspot-2"
+                  data-position="-1.4336128148682588m 0.461965669135331m 0.8719049572460735m"
+                  data-normal="-0.8806942325476936m -0.08648576089076937m -0.46572296692387144m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">Rectangular Patch</div></button
+                ><button
+                  class="Hotspot"
+                  slot="hotspot-3"
+                  data-position="-1.5423816873399936m 0.3133280576205387m 1.0800905534670666m"
+                  data-normal="-0.1828347857291625m 0.6528498762401055m 0.7350907972629303m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">Narrow edges</div></button
+                ><button
+                  class="Hotspot"
+                  slot="hotspot-4"
+                  data-position="-1.2314350633492686m 0.693936734105929m 0.7706991746892871m"
+                  data-normal="0.9640615406779862m 0.01639671214689083m 0.2651725732732548m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">Deep</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                  View in your space
+                </button>
+              </model-viewer>
+              <!--3D Model-->
 
-        <!-- Lesser Grey Shrike -->
-        <div id="lesser-grey-shrike" class="bird-section">
-          <div class="bird-text">
-            <h3>Lesser Grey Shrike (Lanius minor)</h3>
-            <p>
-              The Lesser Grey Shrike is a striking bird with black, white, and
-              grey plumage, and males often display a subtle pinkish hue on
-              their chest during the breeding season.
-            </p>
-            <p>
-              Known for its sharp vision and hunting prowess, this bird thrives
-              in warm, open habitats like grasslands, scrublands, and farmlands.
-              Shrikes are perch hunters, often seen atop telephone wires,
-              fences, or tall shrubs, scanning the ground for insects, small
-              mammals, and even reptiles.
-            </p>
-            <p>
-              They're resourceful predators, sometimes storing their prey on
-              thorns or barbed wire for later consumption—a behavior that's
-              earned them the nickname "butcher birds." Lesser Grey Shrikes
-              migrate seasonally, breeding in Europe and Central Asia before
-              heading to Africa for the winter.
-            </p>
-            <p>
-              These birds are a vital part of the ecosystem, keeping insect
-              populations in check. Despite their resilience, they face threats
-              from habitat loss, making conservation efforts essential to their
-              survival.
-            </p>
+              <!--<img src="img/ArExperience.jpg" alt="LesserGreyShrike/Bird3D" />-->
+            </div>
           </div>
-          <div class="bird-images">
-            <img
-              src="img/LesserGreyShrike-Camera.png"
-              alt="LesserGreyShrike/Bird"
-            />
-            <img
-              src="img/LesserGreyShrike-Camera 2.png"
-              alt="LesserGreyShrike/Bird"
-            />
-            <img
-              src="img/LesserGreyShrike-Camera 3.png"
-              alt="LesserGreyShrike/Bird"
-            />
-            <!--3D Model-->
-            <model-viewer
-              src="./3Dassets/lesserGrayshrike.glb"
-              alt="A 3D model of a Lesser Grey Shrike"
-              ar
-              auto-rotate
-              camera-controls
-            >
-            </model-viewer>
-            <!--3D Model-->
 
-            <!--<img src="img/ArExperience.jpg" alt="LesserGreyShrike/Bird3D" />-->
-          </div>
-          <model-viewer src="./3Dassets/lesser_grey_shrike.glb"
-              alt="A 3D model of a Lesser Grey Shrike"
-              ar
-              auto-rotate
-              camera-controls>
-          </model-viewer>
-        </div>
+          <!-- Bee Eater -->
+          <div id="bee-eater" class="bird-section">
+            <div class="bird-text">
+              <h3>Bee Eater (Merops apiaster)</h3>
+              <p>
+                The Bee Eater is a dazzling bird known for its vibrant plumage,
+                featuring shades of blue, green, yellow, and chestnut. It
+                thrives in open landscapes like grasslands, riverbanks, and
+                farmland, often near sandy areas for nesting.
+              </p>
+              <p>
+                True to its name, the Bee Eater specializes in catching bees and
+                wasps mid-flight. Cleverly, it neutralizes their stingers by
+                striking them against a hard surface before swallowing. This
+                agile hunter also preys on other flying insects, playing a
+                crucial role in controlling pest populations.
+              </p>
+              <p>
+                Bee Eaters are highly social birds, often seen in groups. They
+                dig long tunnels in sandy banks to build their nests,
+                demonstrating remarkable teamwork and adaptability. These
+                migratory birds breed in Europe and parts of Asia, journeying to
+                Africa for the winter. Their striking beauty and fascinating
+                behaviors make them a favorite among bird enthusiasts.
+              </p>
+            </div>
+            <div class="bird-images">
+              <img src="img/BeeEater-Camera1.png" alt="BeeEater/Bird" />
+              <img src="img/BeeEater-Camera 2.png" alt="BeeEater/Bird" />
+              <img src="img/BeeEater-Camera 3.png" alt="BeeEater/Bird" />
+              <!--3D Model-->
+              <model-viewer
+                src="./3Dassets/beeEater.glb"
+                alt="A 3D model of a Bee Eater"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-controls
+                tone-mapping="neutral"
+                shadow-intensity="1"
+              >
+                <button
+                  class="Hotspot"
+                  slot="hotspot-1"
+                  data-position="-0.0923363416232356m 0.15242906514618787m 0.020930927768954062m"
+                  data-normal="-0.5943276316413428m 0.15691874662798688m -0.7887656009387668m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">Bill</div></button
+                ><button
+                  class="Hotspot"
+                  slot="hotspot-3"
+                  data-position="-0.05054569962020216m 0.1582372653589597m 0.007051284275796104m"
+                  data-normal="0.6217828350922955m 0.7052804201741766m 0.340537273882793m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">
+                    Dark chestnut crown &amp; back
+                  </div></button
+                ><button
+                  class="Hotspot"
+                  slot="hotspot-4"
+                  data-position="-0.024972886471005585m 0.10554165463411727m 0.021910887036653205m"
+                  data-normal="-0.26650309930616234m -0.2350275175470628m 0.9347396236684711m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">
+                    Rufous wing coverts
+                  </div></button
+                ><button
+                  class="Hotspot"
+                  slot="hotspot-5"
+                  data-position="-0.06870918951044422m 0.1302644540154247m -0.002800909468941397m"
+                  data-normal="-0.8300405838269151m -0.2606203418440383m -0.4930615241705345m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">
+                    Yellow throat &amp; black breast-band
+                  </div></button
+                ><button
+                  class="Hotspot"
+                  slot="hotspot-6"
+                  data-position="0.08405428643141491m 0.07236110680368318m 0.030343785694m"
+                  data-normal="0.4154485333923701m 0.8938611368373808m 0.16856685366321014m"
+                  data-visibility-attribute="visible"
+                >
+                  <div class="HotspotAnnotation">
+                    Blue-green tail with dark central rectrices that project
+                    into points
+                  </div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                  View in your space
+                </button>
+              </model-viewer>
 
-        <!-- Bee Eater -->
-        <div id="bee-eater" class="bird-section">
-          <div class="bird-text">
-            <h3>Bee Eater (Merops apiaster)</h3>
-            <p>
-              The Bee Eater is a dazzling bird known for its vibrant plumage,
-              featuring shades of blue, green, yellow, and chestnut. It thrives
-              in open landscapes like grasslands, riverbanks, and farmland,
-              often near sandy areas for nesting.
-            </p>
-            <p>
-              True to its name, the Bee Eater specializes in catching bees and
-              wasps mid-flight. Cleverly, it neutralizes their stingers by
-              striking them against a hard surface before swallowing. This agile
-              hunter also preys on other flying insects, playing a crucial role
-              in controlling pest populations.
-            </p>
-            <p>
-              Bee Eaters are highly social birds, often seen in groups. They dig
-              long tunnels in sandy banks to build their nests, demonstrating
-              remarkable teamwork and adaptability. These migratory birds breed
-              in Europe and parts of Asia, journeying to Africa for the winter.
-              Their striking beauty and fascinating behaviors make them a
-              favorite among bird enthusiasts.
-            </p>
+              <!--3D Model-->
+            </div>
           </div>
-          <div class="bird-images">
-            <img src="img/BeeEater-Camera1.png" alt="BeeEater/Bird" />
-            <img src="img/BeeEater-Camera 2.png" alt="BeeEater/Bird" />
-            <img src="img/BeeEater-Camera 3.png" alt="BeeEater/Bird" />
-            <!--3D Model-->
-            <model-viewer
-              src="./3Dassets/beeEater.glb"
-              alt="A 3D model of a Bee Eater"
-              ar
-              auto-rotate
-              camera-controls
-            >
-            </model-viewer>
-            <!--3D Model-->
-          </div>
-          <model-viewer src="./3Dassets/Bee-eater.usdz"
-              alt="A 3D model of a Bee Eater"
-              ar
-              auto-rotate
-              camera-controls>
-          </model-viewer>
         </div>
       </section>
       <!-- BIRD SECTION END-->

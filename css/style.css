@@ -174,13 +174,15 @@ section {
 
 /* Bird Sections */
 .bird-section {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: column;
   gap: 40px;
   margin-bottom: 60px;
+  padding: 20px;
 }
 
 .bird-text {
+  flex: 1;
   padding-right: 20px;
 }
 
@@ -188,10 +190,11 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  align-items: center;
 }
 
 .bird-images img {
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -212,17 +215,68 @@ section {
 
 /* 3D Model Viewer */
 model-viewer {
-  width: 80%;
-  height: 250px;
+  width: 100%;
+  height: 400px;
+  grid-column: span 2;
+  margin: 20px 0;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
 }
 
 model-viewer:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+/* Hotspot styles */
+.Hotspot {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 8px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+}
+
+.Hotspot:not([data-visible]) {
+  background: transparent;
+  border: 4px solid #fff;
+  box-shadow: none;
+  height: 32px;
+  pointer-events: none;
+  width: 32px;
+}
+
+.Hotspot:focus {
+  outline: none;
+}
+
+.Hotspot > * {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.HotspotAnnotation {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  left: calc(100% + 1em);
+  max-width: 200px;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 50%;
+  width: max-content;
 }
 
 /* Footer */
